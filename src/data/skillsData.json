@@ -1,0 +1,26 @@
+{
+    "javascript":{
+        "title":"JavaScript",
+        "percent":"80"
+    },
+    "html":{
+        "title":"HTML",
+        "percent":"90"
+    },
+    "css":{
+        "title":"CSS",
+        "percent":"90"
+    },
+    "react":{
+        "title":"React",
+        "percent":"70"
+    },
+    "redux":{
+        "title":"Redux",
+        "percent":"60"
+    },
+    "rxjs":{
+        "title":"RxJS",
+        "percent":"60"
+    }
+}
