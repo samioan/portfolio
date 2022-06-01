@@ -2,11 +2,9 @@ import React, { useState, useEffect } from "react";
 
 const withDimensions = (Component) => (props) => {
   const [width, setWidth] = useState(window.innerWidth);
-  // const [height, setHeight] = useState(window.innerHeight);
 
   const updateDimensions = () => {
     setWidth(window.innerWidth);
-    // setHeight(window.innerHeight);
   };
 
   useEffect(() => {

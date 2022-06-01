@@ -1,5 +1,4 @@
 import React from "react";
-import { Scrollbars } from "react-custom-scrollbars-2";
 
 import { closeIcon } from "./images";
 import { ProjectModalCarousel } from "./components";
@@ -37,10 +36,8 @@ const ProjectModal = ({
         <div className={classes.divider} />
 
         <div className={classes.modalContent}>
+          <p className={classes.modalDescription}>{details}</p>
           <ProjectModalCarousel images={images} />
-          <Scrollbars autoHeight autoHeightMin="auto" autoHeightMax={150}>
-            <p className={classes.modalDescription}>{details}</p>
-          </Scrollbars>
         </div>
 
         <div className={classes.modalButtonsContainer}>

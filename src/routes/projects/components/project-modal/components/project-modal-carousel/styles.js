@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { colors, fonts, breakpoints } from "theme";
+import { colors, breakpoints } from "theme";
 
 const styles = createUseStyles({
   carouselContainer: {
@@ -13,14 +13,6 @@ const styles = createUseStyles({
   imageContainer: {
     width: "100%",
     height: "100%",
-  },
-  numberText: {
-    ...fonts.itemContentText,
-    color: colors.white,
-    padding: "8px 16px",
-    position: "absolute",
-    top: 0,
-    textShadow: `1px 1px ${colors.backgroundDark}`,
   },
   image: {
     width: "100%",
@@ -41,11 +33,11 @@ const styles = createUseStyles({
     fontWeight: "bold",
     fontSize: 18,
     transition: "0.5s",
-    backgroundColor: "transparent",
+    backgroundColor: "rgba(0,0,0,0.4)",
     border: "none",
     borderRadius: 16,
     "&:hover": {
-      backgroundColor: "rgba(0,0,0,0.2)",
+      backgroundColor: "rgba(0,0,0,0.6)",
     },
   },
   nextButton: {

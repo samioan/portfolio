@@ -10,9 +10,6 @@ const ProjectModalCarousel = ({ images }) => {
   return (
     <div className={classes.carouselContainer}>
       <div className={classes.imageContainer}>
-        <div className={classes.numberText}>
-          {`${carouselImage + 1} / ${images.length}`}
-        </div>
         <img
           src={images[carouselImage]}
           alt="Project"

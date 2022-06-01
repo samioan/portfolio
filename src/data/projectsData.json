@@ -1,15 +1,17 @@
 {
-    "project1": {
-        "title": "Project 1 Header",
-        "tagline": "Project 1 Text",
-        "description": "Description 1",
-        "details": "Details 1",
-        "splashImage": "../images/croissant.jpg",
+    "k-retail": {
+        "title": "K-Retail",
+        "tagline": "React / Redux / RxJS / MUI",
+        "description": "E-Commerce App",
+        "details": "K-Retail is a platform that lets employees manage product inventory, customer orders and employee sales.",
+        "splashImage": "../images/k-retail/k-retail-1.jpg",
         "images": [
-            "https://cdn.pixabay.com/photo/2020/06/01/22/23/eye-5248678__340.jpg",
-            "https://static.vecteezy.com/packs/media/components/global/search-explore-nav/img/vectors/term-bg-1-666de2d941529c25aa511dc18d727160.jpg"
+            "../images/k-retail/k-retail-1.jpg",
+            "../images/k-retail/k-retail-2.jpg",
+            "../images/k-retail/k-retail-3.jpg",
+            "../images/k-retail/k-retail-4.jpg"
         ],
-        "link": "https://www.google.com/"
+        "link": ""
     },
     "project2": {
         "title": "Project 2 Header",

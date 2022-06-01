@@ -1,15 +1,12 @@
 import { createUseStyles } from "react-jss";
-import { fonts, colors, breakpoints } from "theme";
+import { fonts, colors } from "theme";
 
 const styles = createUseStyles({
   form: {
-    minWidth: 300,
+    minWidth: 248,
     maxWidth: 500,
     width: "100%",
     paddingBottom: 132,
-    [breakpoints.sm]: {
-      paddingBottom: 16,
-    },
   },
   input: {
     ...fonts.itemContentText,

@@ -7,9 +7,8 @@ const styles = createUseStyles({
     flexDirection: "column",
     alignItems: "center",
     padding: 8,
-    width: "25%",
-    maxWidth: "calc(25% - 34px)",
-    minWidth: 100,
+    flexGrow: 1,
+    flexBasis: "content",
   },
   goalImage: {
     width: 100,

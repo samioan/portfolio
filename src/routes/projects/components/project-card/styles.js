@@ -25,7 +25,7 @@ const styles = createUseStyles({
     justifyContent: "space-evenly",
     width: "100%",
     height: "100%",
-    backgroundColor: "rgba(197,198,199,0.8)",
+    backgroundColor: colors.textSecondary,
     borderRadius: 16,
     opacity: 0,
     transition: "0.5s",

@@ -67,6 +67,7 @@ const styles = createUseStyles({
   modalDescription: {
     ...fonts.itemContentText,
     textAlign: "left",
+    marginBottom: 16,
   },
   modalButtonsContainer: {
     display: "flex",

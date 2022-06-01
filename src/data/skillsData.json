@@ -22,5 +22,9 @@
     "rxjs":{
         "title":"RxJS",
         "percent":"60"
+    },
+    "mui":{
+        "title":"MUI",
+        "percent":"80"
     }
 }

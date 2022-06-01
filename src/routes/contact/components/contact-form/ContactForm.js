@@ -4,15 +4,23 @@ import withContactFormProps from "./withContactFormProps";
 
 import styles from "./styles";
 
-const ContactForm = ({ handleSubmit, status }) => {
+const ContactForm = ({
+  handleOnSubmit,
+  handleOnChange,
+  inputs,
+  status,
+  label,
+}) => {
   const classes = styles();
 
   return (
-    <form onSubmit={handleSubmit} className={classes.form}>
+    <form onSubmit={handleOnSubmit} className={classes.form}>
       <input
         type="text"
         id="name"
         placeholder="Name"
+        value={inputs.name}
+        onChange={handleOnChange}
         required
         className={classes.input}
       />
@@ -20,6 +28,8 @@ const ContactForm = ({ handleSubmit, status }) => {
         type="email"
         id="email"
         placeholder="Email"
+        value={inputs.email}
+        onChange={handleOnChange}
         required
         className={classes.input}
       />
@@ -28,6 +38,8 @@ const ContactForm = ({ handleSubmit, status }) => {
         <textarea
           id="message"
           placeholder="Message"
+          value={inputs.message}
+          onChange={handleOnChange}
           required
           className={`${classes.input} ${classes.message}`}
         />
@@ -35,9 +47,9 @@ const ContactForm = ({ handleSubmit, status }) => {
       <button
         type="submit"
         className={classes.submitButton}
-        disabled={status === "Sending..."}
+        disabled={status.submitting}
       >
-        <p className={classes.submitButtonText}>{status}</p>
+        <p className={classes.submitButtonText}>{label}</p>
       </button>
     </form>
   );
