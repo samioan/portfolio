@@ -1,17 +1,39 @@
-import { createUseStyles } from "react-jss";
+import { homeBg } from "./images";
 
-const styles = createUseStyles({
-  homeContainer: {
-    width: "100%",
-    maxWidth: 1280,
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    justifyContent: "center",
-    minHeight: "100vh",
-    marginTop: 16,
+const styles = {
+  container: {
+    background: `url(${homeBg})`,
+    backgroundSize: "cover",
+    height: "100vh",
+    "&:before": {
+      content: "''",
+      position: "fixed",
+      left: "0vw",
+      right: "0vw",
+      top: "0vw",
+      bottom: "0vw",
+      width: "auto",
+      height: "auto",
+      overflow: "hidden",
+      opacity: 0.6,
+      bgcolor: "#000",
+    },
   },
-});
+  innerContainer: {
+    zIndex: 1,
+  },
+  title: {
+    fontWeight: 600,
+    textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
+    letterSpacing: "-.035em",
+    mb: 1,
+  },
+  subtitle: {
+    fontSize: 20,
+    mr: 1,
+    textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
+  },
+};
 
 export { styles };
 export default styles;

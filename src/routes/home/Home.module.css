@@ -1,0 +1,15 @@
+.name {
+    opacity: 0.5;
+    padding-right: 15px
+}
+.typewriterText {
+    color:#fff;
+    font-weight:700;
+    font-size:20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}
+.typewriterCursor {
+    color:#a9a9a9;
+    font-size:20px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+}

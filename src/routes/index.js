@@ -1,6 +1,8 @@
+import Blog from "./blog";
 import Home from "./home";
 import About from "./about";
-import Projects from "./projects";
+import Resume from "./resume";
 import Contact from "./contact";
+import Portfolio from "./portfolio";
 
-export { Home, About, Projects, Contact };
+export { Home, About, Resume, Portfolio, Blog, Contact };

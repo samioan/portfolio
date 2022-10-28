@@ -1,0 +1,39 @@
+.tooltip > div {
+    background-color:#111;
+}
+
+.tooltip > div > span {
+    color:#111;
+}
+
+.logo {
+    height:inherit;
+    width:inherit;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLink {
+    height:inherit;
+    width:inherit;
+    color:#a9a9a9;
+    transition: all .3s ease 0s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLink:hover {
+    color:#fff;
+}
+
+.activeIconLink {
+    height:inherit;
+    width:inherit;
+    color:#5ac24e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

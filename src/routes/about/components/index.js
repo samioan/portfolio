@@ -1,5 +1,6 @@
-import GoalItem from "./goal-item";
-import ProfileDetails from "./profile-details";
-import SkillBar from "./skill-bar";
+import BioText from "./bio-text";
+import CvButton from "./cv-button";
+import RoundButton from "./round-button";
+import ServiceCard from "./service-card";
 
-export { GoalItem, ProfileDetails, SkillBar };
+export { CvButton, RoundButton, ServiceCard, BioText };

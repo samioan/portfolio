@@ -1,14 +1,14 @@
 import { Title, RightColumn, LeftColumn, PageContainer } from "components";
 
-const Contact = () => (
+const Portfolio = () => (
   <PageContainer>
     <LeftColumn>
-      <Title label="CONTACT" />
+      <Title label="PORTFOLIO" />
     </LeftColumn>
 
     <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
   </PageContainer>
 );
 
-export { Contact };
-export default Contact;
+export { Portfolio };
+export default Portfolio;

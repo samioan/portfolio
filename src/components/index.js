@@ -1,6 +1,8 @@
-import Header from "./header";
-import Footer from "./footer";
-import PageTitle from "./page-title";
-import ScrollToButton from "./scroll-to-button";
+import Title from "./title";
+import Sidebar from "./sidebar";
+import Subtitle from "./subtitle";
+import LeftColumn from "./left-column";
+import RightColumn from "./right-column";
+import PageContainer from "./page-container";
 
-export { Header, Footer, PageTitle, ScrollToButton };
+export { Sidebar, Title, RightColumn, LeftColumn, Subtitle, PageContainer };
