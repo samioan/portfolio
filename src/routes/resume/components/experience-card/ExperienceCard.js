@@ -2,11 +2,13 @@ import Grid from "@mui/material/Grid";
 import Divider from "@mui/material/Divider";
 import Typography from "@mui/material/Typography";
 
+import { CardContainer } from "components";
+
 import styles from "./styles";
 import classes from "./ExperienceCard.module.css";
 
 const ExperienceCard = ({ experienceItems }) => (
-  <Grid sx={styles.cardContainer}>
+  <CardContainer customStyles={styles.cardContainer}>
     {experienceItems.map((item) => (
       <div key={item.title}>
         <Grid sx={styles.card}>
@@ -24,7 +26,7 @@ const ExperienceCard = ({ experienceItems }) => (
         )}
       </div>
     ))}
-  </Grid>
+  </CardContainer>
 );
 
 export { ExperienceCard };

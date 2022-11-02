@@ -5,8 +5,10 @@ import Typography from "@mui/material/Typography";
 import styles from "./styles";
 import classes from "./SkillsCard.module.css";
 
+import { CardContainer } from "components";
+
 const SkillsCard = ({ skillItems }) => (
-  <Grid sx={styles.cardContainer}>
+  <CardContainer customStyles={styles.cardContainer}>
     {skillItems.map((item) => (
       <div key={item.title}>
         <Grid sx={styles.card}>
@@ -25,7 +27,7 @@ const SkillsCard = ({ skillItems }) => (
         )}
       </div>
     ))}
-  </Grid>
+  </CardContainer>
 );
 
 export { SkillsCard };

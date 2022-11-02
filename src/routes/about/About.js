@@ -18,7 +18,7 @@ const About = () => (
   <PageContainer>
     <LeftColumn>
       <Title label="ABOUT ME" />
-      <Grid sx={{ pt: "116px", width: "100%", px: "28px" }}>
+      <Grid sx={styles.bioContainer}>
         <BioText />
         <Grid
           container

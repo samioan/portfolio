@@ -1,4 +1,9 @@
 const styles = {
+  bioContainer: {
+    pt: "116px",
+    width: "100%",
+    px: "28px",
+  },
   buttonsContainer: {
     gap: "20px",
   },

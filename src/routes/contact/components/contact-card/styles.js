@@ -4,15 +4,18 @@ const styles = {
     width: "50%",
   },
   card: {
-    p: "30px",
-    minHeight: "236px",
+    p: "20px",
+    height: "87px",
+  },
+  textContainer: {
+    ml: "15px",
   },
   title: {
-    my: "10px",
     fontSize: "16px",
     fontWeight: 700,
+    lineHeight: "20px",
   },
-  text: {
+  subtitle: {
     fontSize: "15px",
     lineHeight: 1.7,
   },
