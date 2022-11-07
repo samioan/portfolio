@@ -40,7 +40,7 @@ const Portfolio = () => (
     <LeftColumn>
       <Title label="PORTFOLIO" />
       <Subtitle label="My Projects" customStyles={styles.subtitle} />
-      <Grid container sx={styles.projectsContainer}>
+      <Grid container sx={styles.container}>
         <Grid container direction="column" wrap="nowrap" sx={styles.column}>
           {projects.map((project) => (
             <ProjectCard project={project} />

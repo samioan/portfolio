@@ -1,83 +1,57 @@
-import { NavLink } from "react-router-dom";
-
 import Grid from "@mui/material/Grid";
-import Tooltip from "@mui/material/Tooltip";
-import IconButton from "@mui/material/IconButton";
-import WebhookOutlinedIcon from "@mui/icons-material/WebhookOutlined";
 
 import styles from "./styles";
 import withSidebar from "./withSidebar";
-import classes from "./Sidebar.module.css";
+import { Logo, NavButton, NavPopover, NavMenu } from "./components";
 
-const Sidebar = ({ topSidebarButtons, bottomSidebarButtons }) => (
-  <Grid container direction="column" sx={styles.container}>
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      sx={styles.innerContainer}
-    >
-      <Grid
-        container
-        alignItems="center"
-        justifyContent="center"
-        sx={styles.logoContainer}
-      >
-        <IconButton disableRipple sx={styles.logo}>
-          <NavLink end to="/" className={classes.logo}>
-            <WebhookOutlinedIcon />
-          </NavLink>
-        </IconButton>
+const Sidebar = ({
+  topSidebarButtons,
+  bottomSidebarButtons,
+  isXl,
+  open,
+  anchorEl,
+  handleClick,
+}) => {
+  return (
+    <Grid container sx={styles.container}>
+      <Grid container alignItems="center" sx={styles.innerContainer}>
+        <Logo />
+        {!isXl &&
+          topSidebarButtons.map(({ title, component, href }) => (
+            <NavButton
+              key={title}
+              isTop
+              title={title}
+              component={component}
+              href={href}
+            />
+          ))}
       </Grid>
-      {topSidebarButtons.map(({ title, component, href }) => (
-        <Tooltip
-          key={title}
-          title={title}
-          arrow
-          placement="right"
-          classes={{ popper: classes.tooltip }}
-        >
-          <IconButton disableRipple sx={styles.iconButton}>
-            <NavLink
-              end
-              className={({ isActive }) =>
-                isActive ? classes.activeIconLink : classes.iconLink
-              }
-              to={href}
-            >
-              {component}
-            </NavLink>
-          </IconButton>
-        </Tooltip>
-      ))}
-    </Grid>
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      sx={styles.innerContainer}
-    >
-      {bottomSidebarButtons.map(({ title, component, href }) => (
-        <Tooltip
-          key={title}
-          title={title}
-          arrow
-          placement="right"
-          classes={{ popper: classes.tooltip }}
-        >
-          <IconButton
-            disableRipple
-            sx={styles.bottomIconButton}
-            target="_blank"
+      <Grid container alignItems="center" sx={styles.innerBottomContainer}>
+        {bottomSidebarButtons.map(({ title, component, href }) => (
+          <NavButton
+            key={title}
+            title={title}
+            component={component}
             href={href}
-          >
-            {component}
-          </IconButton>
-        </Tooltip>
-      ))}
+          />
+        ))}
+        {isXl && <NavMenu isMenuOpen={open} handleClick={handleClick} />}
+      </Grid>
+      <NavPopover open={open} anchorEl={anchorEl} onClose={handleClick}>
+        {topSidebarButtons.map(({ title, component, href }) => (
+          <NavButton
+            key={title}
+            isTop
+            title={title}
+            component={component}
+            href={href}
+          />
+        ))}
+      </NavPopover>
     </Grid>
-  </Grid>
-);
+  );
+};
 
 export { Sidebar };
 export default withSidebar(Sidebar);

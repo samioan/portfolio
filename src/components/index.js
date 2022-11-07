@@ -5,6 +5,7 @@ import LeftColumn from "./left-column";
 import RightColumn from "./right-column";
 import PageContainer from "./page-container";
 import CardContainer from "./card-container";
+import Scrollbars from "./scrollbars";
 
 export {
   Sidebar,
@@ -14,4 +15,5 @@ export {
   Subtitle,
   PageContainer,
   CardContainer,
+  Scrollbars,
 };

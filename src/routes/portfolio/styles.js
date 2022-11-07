@@ -1,14 +1,14 @@
 const styles = {
   subtitle: {
-    ml: "28px",
+    ml: { xl: "28px", xs: 0 },
     mt: "138px",
     mb: "28px",
   },
-  projectsContainer: {
-    pb: "30px",
-  },
   column: {
-    width: "50%",
+    width: { xl: "50%", xs: "100%" },
+  },
+  container: {
+    pb: "30px",
   },
 };
 

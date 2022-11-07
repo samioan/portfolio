@@ -1,16 +1,27 @@
 import Grid from "@mui/material/Grid";
+import { useTheme } from "@mui/material/styles";
+import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { Scrollbars } from "react-custom-scrollbars-2";
+import { Scrollbars } from "components";
 
 import styles from "./styles";
 
-const LeftColumn = ({ children }) => (
-  <Grid item xs={6} sx={styles.leftColumnContainer}>
-    <Scrollbars autoHide autoHeight autoHeightMin={"100vh"}>
-      {children}
-    </Scrollbars>
-  </Grid>
-);
+const LeftColumn = ({ children }) => {
+  const theme = useTheme();
+  const isXl = useMediaQuery(theme.breakpoints.down("xl"));
+
+  return (
+    <>
+      {isXl ? (
+        <Grid sx={styles.leftColumnContainer}>{children}</Grid>
+      ) : (
+        <Grid sx={styles.leftColumnContainer}>
+          <Scrollbars isForColumn>{children}</Scrollbars>
+        </Grid>
+      )}
+    </>
+  );
+};
 
 export { LeftColumn };
 export default LeftColumn;

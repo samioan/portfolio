@@ -40,7 +40,12 @@ const About = () => (
 
       <Subtitle label="My Services" customStyles={styles.servicesSubtitle} />
 
-      <Grid container justifyContent="space-between" wrap="wrap">
+      <Grid
+        container
+        justifyContent="space-between"
+        wrap="wrap"
+        sx={styles.bottomContainer}
+      >
         <ServiceCard
           icon={<CodeIcon />}
           title="Test"

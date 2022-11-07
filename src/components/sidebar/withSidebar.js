@@ -1,5 +1,9 @@
+import { useState, useEffect } from "react";
+
+import { useTheme } from "@mui/material/styles";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import useMediaQuery from "@mui/material/useMediaQuery";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
@@ -10,6 +14,22 @@ import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined
 import styles from "./styles";
 
 const withSidebar = (Component) => (props) => {
+  const theme = useTheme();
+  const isXl = useMediaQuery(theme.breakpoints.down("xl"));
+
+  const [open, setOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+    setOpen((previousOpen) => !previousOpen);
+  };
+
+  useEffect(() => {
+    setAnchorEl(null);
+    setOpen(false);
+  }, [isXl]);
+
   const topSidebarButtons = [
     {
       title: "Home",
@@ -60,6 +80,10 @@ const withSidebar = (Component) => (props) => {
     ...props,
     topSidebarButtons,
     bottomSidebarButtons,
+    isXl,
+    open,
+    anchorEl,
+    handleClick,
   };
 
   return <Component {...newProps} />;

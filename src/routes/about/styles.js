@@ -9,8 +9,11 @@ const styles = {
   },
   servicesSubtitle: {
     mt: "102px",
-    pl: "28px",
-    pb: "16px",
+    pl: { xl: "28px", xs: 0 },
+    pb: { xl: "16px", xs: 0 },
+  },
+  bottomContainer: {
+    pb: "30px",
   },
 };
 

@@ -3,19 +3,20 @@ const styles = {
     mt: "138px",
   },
   subtitle: {
-    ml: "28px",
+    ml: { xl: "28px", xs: 0 },
     mb: "32px",
   },
   bottomSubtitle: {
     mt: "102px",
-    ml: "28px",
+    ml: { xl: "28px", xs: 0 },
     mb: "32px",
   },
   topCardContainer: {
-    width: "50%",
+    width: { xl: "50%", xs: "100%" },
+    mb: { xl: 0, xs: "70px" },
   },
   bottomCardContainer: {
-    width: "50%",
+    width: { xl: "50%", xs: "100%" },
     mb: "46px",
   },
 };
