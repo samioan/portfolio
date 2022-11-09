@@ -27,9 +27,10 @@ const styles = {
     textShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
     letterSpacing: "-.035em",
     mb: 1,
+    fontSize: { sm: "66px", xs: "46px" },
   },
   subtitle: {
-    fontSize: 20,
+    fontSize: { sm: "20px", xs: "18px" },
     mr: 1,
     textShadow: " 0px 4px 4px rgba(0, 0, 0, 0.25)",
   },

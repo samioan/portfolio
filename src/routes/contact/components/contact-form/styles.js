@@ -7,8 +7,8 @@ const styles = {
   },
   rightTextFieldContainer: {
     py: "16px",
-    width: { xl: "50%", xs: "100%" },
-    pr: { xl: "28px", xs: 0 },
+    width: { sm: "50%", xs: "100%" },
+    pr: { sm: "28px", xs: 0 },
     height: "92px",
   },
   textField: {
@@ -31,8 +31,8 @@ const styles = {
   },
   leftTextFieldContainer: {
     py: "16px",
-    width: { xl: "50%", xs: "100%" },
-    pl: { xl: "28px", xs: 0 },
+    width: { sm: "50%", xs: "100%" },
+    pl: { sm: "28px", xs: 0 },
     height: "92px",
   },
   bottomTextFieldContainer: {

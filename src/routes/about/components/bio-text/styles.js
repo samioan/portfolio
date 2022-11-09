@@ -1,6 +1,6 @@
 const styles = {
   text: {
-    fontSize: "23px",
+    fontSize: { xs: "19px", sm: "23px" },
     lineHeight: 1.7,
     mb: "30px",
     fontWeight: 200,

@@ -3,7 +3,7 @@ const styles = {
     fontSize: "20px",
     lineHeight: "28px",
     fontWeight: 700,
-    textAlign: { xl: "left", xs: "center" },
+    textAlign: { sm: "left", xs: "center" },
   },
 };
 

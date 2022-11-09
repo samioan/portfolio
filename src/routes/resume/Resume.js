@@ -64,7 +64,7 @@ const Resume = () => (
           />
           <SkillsCard skillItems={skillItems} />
         </Grid>
-        <Grid item sx={styles.bottomCardContainer}>
+        <Grid item sx={styles.bottomFinalCardContainer}>
           <Subtitle
             label="Professional Skills"
             customStyles={styles.bottomSubtitle}

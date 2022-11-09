@@ -1,6 +1,6 @@
 const styles = {
   bioContainer: {
-    pt: "116px",
+    pt: { sm: "116px", xs: "76px" },
     width: "100%",
     px: "28px",
   },
@@ -8,9 +8,9 @@ const styles = {
     gap: "20px",
   },
   servicesSubtitle: {
-    mt: "102px",
-    pl: { xl: "28px", xs: 0 },
-    pb: { xl: "16px", xs: 0 },
+    mt: { sm: "102px", xs: "82px" },
+    pl: { sm: "28px", xs: 0 },
+    pb: "16px",
   },
   bottomContainer: {
     pb: "30px",

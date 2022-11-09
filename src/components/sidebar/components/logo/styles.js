@@ -2,7 +2,7 @@ const styles = {
   logoContainer: {
     bgcolor: "text.primary",
     height: 58,
-    width: { xl: "100%", xs: 58 },
+    width: { md: "100%", xs: 58 },
     "&:before": {
       content: "''",
       position: "absolute",

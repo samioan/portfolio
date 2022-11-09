@@ -10,7 +10,7 @@ import classes from "./NavButton.module.css";
 
 const NavButton = ({ isTop, title, href, component }) => {
   const theme = useTheme();
-  const isXl = useMediaQuery(theme.breakpoints.down("xl"));
+  const isXl = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>

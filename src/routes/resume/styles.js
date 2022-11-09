@@ -1,22 +1,27 @@
 const styles = {
   pageContainer: {
-    mt: "138px",
+    mt: { sm: "138px", xs: "83px" },
   },
   subtitle: {
-    ml: { xl: "28px", xs: 0 },
+    ml: { sm: "28px", xs: 0 },
     mb: "32px",
   },
   bottomSubtitle: {
-    mt: "102px",
-    ml: { xl: "28px", xs: 0 },
+    ml: { sm: "28px", xs: 0 },
     mb: "32px",
   },
   topCardContainer: {
-    width: { xl: "50%", xs: "100%" },
-    mb: { xl: 0, xs: "70px" },
+    width: { sm: "50%", xs: "100%" },
+    mb: { md: 0, xs: "102px" },
   },
   bottomCardContainer: {
-    width: { xl: "50%", xs: "100%" },
+    mt: { md: "102px", xs: 0 },
+    width: { sm: "50%", xs: "100%" },
+    mb: { sm: "46px", xs: "102px" },
+  },
+  bottomFinalCardContainer: {
+    mt: { md: "102px", xs: 0 },
+    width: { sm: "50%", xs: "100%" },
     mb: "46px",
   },
 };

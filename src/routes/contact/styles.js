@@ -1,12 +1,12 @@
 const styles = {
   detailsSubtitle: {
-    mt: "138px",
-    ml: { xl: "28px", xs: 0 },
+    mt: { sm: "138px", xs: "83px" },
+    ml: { sm: "28px", xs: 0 },
     mb: "16px",
   },
   formSubtitle: {
-    mt: "86px",
-    ml: { xl: "28px", xs: 0 },
+    mt: { sm: "86px", xs: "66px" },
+    ml: { sm: "28px", xs: 0 },
     mb: "16px",
   },
 };

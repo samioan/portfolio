@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import CodeIcon from "@mui/icons-material/Code";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
@@ -12,6 +11,7 @@ import {
 } from "components";
 
 import styles from "./styles";
+import { webIcon } from "./images";
 import { CvButton, RoundButton, ServiceCard, BioText } from "./components";
 
 const About = () => (
@@ -47,25 +47,25 @@ const About = () => (
         sx={styles.bottomContainer}
       >
         <ServiceCard
-          icon={<CodeIcon />}
+          icon={webIcon}
           title="Test"
           text="Modern and mobile-ready website that will help of your
                 marketing."
         />
         <ServiceCard
-          icon={<CodeIcon />}
+          icon={webIcon}
           title="Test"
           text="Modern and mobile-ready website that will help of your
                 marketing."
         />
         <ServiceCard
-          icon={<CodeIcon />}
+          icon={webIcon}
           title="Test"
           text="Modern and mobile-ready website that will help of your
                 marketing."
         />
         <ServiceCard
-          icon={<CodeIcon />}
+          icon={webIcon}
           title="Test"
           text="Modern and mobile-ready website that will help of your
                 marketing."

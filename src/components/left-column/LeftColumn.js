@@ -8,7 +8,7 @@ import styles from "./styles";
 
 const LeftColumn = ({ children }) => {
   const theme = useTheme();
-  const isXl = useMediaQuery(theme.breakpoints.down("xl"));
+  const isXl = useMediaQuery(theme.breakpoints.down("md"));
 
   return (
     <>

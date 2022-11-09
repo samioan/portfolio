@@ -1,7 +1,7 @@
 const styles = {
   cardContainer: {
     p: "16px 28px",
-    width: { xl: "50%", xs: "100%" },
+    width: { sm: "50%", xs: "100%" },
   },
   card: {
     p: "30px",

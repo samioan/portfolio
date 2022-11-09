@@ -15,7 +15,7 @@ import styles from "./styles";
 
 const withSidebar = (Component) => (props) => {
   const theme = useTheme();
-  const isXl = useMediaQuery(theme.breakpoints.down("xl"));
+  const isXl = useMediaQuery(theme.breakpoints.down("md"));
 
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);

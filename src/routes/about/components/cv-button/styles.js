@@ -11,6 +11,7 @@ const styles = {
     textTransform: "capitalize",
     fontSize: "14px",
     fontWeight: 700,
+    width: { xs: "100%", sm: "auto" },
     "&:hover": {
       bgcolor: "rgba(255,255,255,.05)",
       color: "text.primary",

@@ -4,9 +4,9 @@ const styles = {
   },
   pageContainer: {
     bgcolor: "#242425",
-    flexDirection: { xl: "row", xs: "column-reverse" },
+    flexDirection: { md: "row", xs: "column-reverse" },
     alignItems: "flex-end",
-    pl: { xl: "44px", xs: 0 },
+    pl: { md: "44px", xs: 0 },
   },
 };
 

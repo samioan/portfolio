@@ -4,9 +4,6 @@ import { Poppins } from "./fonts";
 const theme = createTheme({
   typography: {
     fontFamily: "Poppins",
-    h1: {
-      fontSize: "4.125rem",
-    },
   },
   components: {
     MuiCssBaseline: {
@@ -28,6 +25,15 @@ const theme = createTheme({
     text: {
       primary: "#5ac24e",
       secondary: "#a9a9a9",
+    },
+  },
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 560,
+      md: 1023,
+      lg: 1330,
+      xl: 1536,
     },
   },
 });
