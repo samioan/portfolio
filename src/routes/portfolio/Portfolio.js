@@ -7,33 +7,11 @@ import {
   PageContainer,
   Subtitle,
 } from "components";
+import { projects } from "reference-data";
 
 import { ProjectCard } from "./components";
 
 import styles from "./styles";
-
-const projects = [
-  {
-    image: "https://bslthemes.com/html/patrick/images/works/work1.jpg",
-    title: "Motorcycle Helmet",
-    subtitle: "Photo",
-  },
-  {
-    image: "https://bslthemes.com/html/patrick/images/works/work2.jpg",
-    title: "Motorcycle Helmet",
-    subtitle: "Photo",
-  },
-  {
-    image: "https://bslthemes.com/html/patrick/images/works/work1.jpg",
-    title: "Motorcycle Helmet",
-    subtitle: "Photo",
-  },
-  {
-    image: "https://bslthemes.com/html/patrick/images/works/work2.jpg",
-    title: "Motorcycle Helmet",
-    subtitle: "Photo",
-  },
-];
 
 const Portfolio = () => (
   <PageContainer>
@@ -42,15 +20,15 @@ const Portfolio = () => (
       <Subtitle label="My Projects" customStyles={styles.subtitle} />
       <Grid container sx={styles.container}>
         <Grid container direction="column" wrap="nowrap" sx={styles.column}>
-          {projects.map((project) => (
-            <ProjectCard project={project} />
+          {projects.slice(0, Math.floor(projects.length / 2)).map((project) => (
+            <ProjectCard key={project.title} project={project} />
           ))}
         </Grid>
         <Grid container direction="column" wrap="nowrap" sx={styles.column}>
-          {Array.from(projects)
-            .reverse()
+          {projects
+            .slice(Math.floor(projects.length / 2), projects.length)
             .map((project) => (
-              <ProjectCard project={project} />
+              <ProjectCard key={project.title} project={project} />
             ))}
         </Grid>
       </Grid>

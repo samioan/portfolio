@@ -1,5 +1,4 @@
 import Grid from "@mui/material/Grid";
-import CodeIcon from "@mui/icons-material/Code";
 
 import {
   Title,
@@ -8,6 +7,7 @@ import {
   PageContainer,
   Subtitle,
 } from "components";
+import { contact } from "reference-data";
 
 import styles from "./styles";
 import { ContactCard, ContactForm } from "./components";
@@ -18,26 +18,14 @@ const Contact = () => (
       <Title label="CONTACT" />
       <Subtitle label="Contact Details" customStyles={styles.detailsSubtitle} />
       <Grid container justifyContent="space-between" wrap="wrap">
-        <ContactCard
-          icon={<CodeIcon />}
-          title="Address"
-          subtitle="Athens, Greece"
-        />
-        <ContactCard
-          icon={<CodeIcon />}
-          title="Address"
-          subtitle="Athens, Greece"
-        />
-        <ContactCard
-          icon={<CodeIcon />}
-          title="Address"
-          subtitle="Athens, Greece"
-        />
-        <ContactCard
-          icon={<CodeIcon />}
-          title="Address"
-          subtitle="Athens, Greece"
-        />
+        {contact.map(({ icon, title, subtitle }) => (
+          <ContactCard
+            key={title}
+            icon={icon}
+            title={title}
+            subtitle={subtitle}
+          />
+        ))}
       </Grid>
       <Subtitle label="Contact Form" customStyles={styles.formSubtitle} />
       <ContactForm />

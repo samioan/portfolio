@@ -6,7 +6,7 @@ import { CardContainer } from "components";
 import styles from "./styles";
 import classes from "./ServiceCard.module.css";
 
-const ServiceCard = ({ icon, title, text }) => (
+const ServiceCard = ({ icon, title, description }) => (
   <Grid sx={styles.cardContainer}>
     <CardContainer customStyles={styles.card}>
       <img src={icon} alt={title} className={classes.icon} />
@@ -14,7 +14,7 @@ const ServiceCard = ({ icon, title, text }) => (
         {title}
       </Typography>
       <Typography color="text.secondary" sx={styles.text}>
-        {text}
+        {description}
       </Typography>
     </CardContainer>
   </Grid>

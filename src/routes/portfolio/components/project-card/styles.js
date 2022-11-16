@@ -1,6 +1,5 @@
 const styles = {
   cardContainer: {
-    height: "100%",
     margin: "16px 28px",
   },
   image: {

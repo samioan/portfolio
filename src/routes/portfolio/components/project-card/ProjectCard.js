@@ -10,11 +10,18 @@ const ProjectCard = ({ project }) => (
   <CardContainer customStyles={styles.cardContainer}>
     <Grid>
       <div className={classes.imageContainer}>
-        <img
-          src={project.image}
-          alt={project.title}
-          className={classes.image}
-        />
+        <a
+          href={project?.link}
+          target="_blank"
+          rel="noreferrer"
+          className={classes.link}
+        >
+          <img
+            src={project.image}
+            alt={project.title}
+            className={classes.image}
+          />
+        </a>
       </div>
       <Grid sx={styles.textContainer}>
         <Typography align="center" color="white.main" sx={styles.title}>

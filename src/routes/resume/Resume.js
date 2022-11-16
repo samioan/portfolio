@@ -7,40 +7,15 @@ import {
   PageContainer,
   Subtitle,
 } from "components";
+import {
+  experience,
+  education,
+  personalSkills,
+  professionalSkills,
+} from "reference-data";
 
 import styles from "./styles";
 import { ExperienceCard, SkillsCard } from "./components";
-
-const experienceItems = [
-  {
-    title: "Web Development",
-    date: "2013-Present",
-    company: "Facebook Inc.",
-    description:
-      "Collaborate with creative and development teams on the execution of ideas.",
-  },
-  {
-    title: "Web Development",
-    date: "2013-Present",
-    company: "Facebook Inc.",
-    description:
-      "Collaborate with creative and development teams on the execution of ideas.",
-  },
-  {
-    title: "Web Development",
-    date: "2013-Present",
-    company: "Facebook Inc.",
-    description:
-      "Collaborate with creative and development teams on the execution of ideas.",
-  },
-];
-
-const skillItems = [
-  { title: "Communication", percentage: 50 },
-  { title: "Communication", percentage: 40 },
-  { title: "Communication", percentage: 70 },
-  { title: "Communication", percentage: 20 },
-];
 
 const Resume = () => (
   <PageContainer>
@@ -50,26 +25,26 @@ const Resume = () => (
         <Grid item sx={styles.topCardContainer}>
           <Subtitle label="My Experience" customStyles={styles.subtitle} />
 
-          <ExperienceCard experienceItems={experienceItems} />
+          <ExperienceCard experienceItems={experience} />
         </Grid>
         <Grid item sx={styles.topCardContainer}>
           <Subtitle label="My Education" customStyles={styles.subtitle} />
 
-          <ExperienceCard experienceItems={experienceItems} />
+          <ExperienceCard experienceItems={education} />
         </Grid>
         <Grid item sx={styles.bottomCardContainer}>
           <Subtitle
             label="Personal Skills"
             customStyles={styles.bottomSubtitle}
           />
-          <SkillsCard skillItems={skillItems} />
+          <SkillsCard skillItems={personalSkills} />
         </Grid>
         <Grid item sx={styles.bottomFinalCardContainer}>
           <Subtitle
             label="Professional Skills"
             customStyles={styles.bottomSubtitle}
           />
-          <SkillsCard skillItems={skillItems} />
+          <SkillsCard skillItems={professionalSkills} />
         </Grid>
       </Grid>
     </LeftColumn>

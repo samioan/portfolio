@@ -1,8 +1,9 @@
-import { homeBg } from "./images";
+import { homeImg } from "images";
 
 const styles = {
   container: {
-    background: `url(${homeBg})`,
+    backgroundColor: "#242425",
+    background: `url(${homeImg})`,
     backgroundSize: "cover",
     height: "100vh",
     "&:before": {

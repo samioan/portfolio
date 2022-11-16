@@ -9,6 +9,8 @@ const styles = {
   },
   textContainer: {
     ml: "15px",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
   },
   title: {
     fontSize: "16px",
@@ -18,6 +20,9 @@ const styles = {
   subtitle: {
     fontSize: "15px",
     lineHeight: 1.7,
+    textOverflow: "ellipsis",
+    overflow: "hidden",
+    whiteSpace: "nowrap",
   },
 };
 

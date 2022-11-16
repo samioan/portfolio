@@ -9,9 +9,9 @@ import {
   Subtitle,
   PageContainer,
 } from "components";
+import { services } from "reference-data";
 
 import styles from "./styles";
-import { webIcon } from "./images";
 import { CvButton, RoundButton, ServiceCard, BioText } from "./components";
 
 const About = () => (
@@ -46,30 +46,14 @@ const About = () => (
         wrap="wrap"
         sx={styles.bottomContainer}
       >
-        <ServiceCard
-          icon={webIcon}
-          title="Test"
-          text="Modern and mobile-ready website that will help of your
-                marketing."
-        />
-        <ServiceCard
-          icon={webIcon}
-          title="Test"
-          text="Modern and mobile-ready website that will help of your
-                marketing."
-        />
-        <ServiceCard
-          icon={webIcon}
-          title="Test"
-          text="Modern and mobile-ready website that will help of your
-                marketing."
-        />
-        <ServiceCard
-          icon={webIcon}
-          title="Test"
-          text="Modern and mobile-ready website that will help of your
-                marketing."
-        />
+        {services?.map(({ icon, title, description }) => (
+          <ServiceCard
+            key={title}
+            icon={icon}
+            title={title}
+            description={description}
+          />
+        ))}
       </Grid>
     </LeftColumn>
 

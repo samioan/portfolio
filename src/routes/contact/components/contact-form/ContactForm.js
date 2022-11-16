@@ -5,37 +5,72 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 import { CardContainer } from "components";
 
+import withContactForm from "./withContactForm";
 import styles from "./styles";
 
-const ContactForm = () => (
+const ContactForm = ({
+  handleOnSubmit,
+  handleOnChange,
+  inputs,
+  status,
+  label,
+  setStatus,
+}) => (
   <Grid sx={styles.cardContainer}>
     <CardContainer customStyles={styles.card}>
-      <Grid container justifyContent="space-between">
-        <Grid sx={styles.rightTextFieldContainer}>
-          <TextField label="Full Name" variant="filled" sx={styles.textField} />
+      <form onSubmit={handleOnSubmit}>
+        <Grid container justifyContent="space-between">
+          <Grid sx={styles.rightTextFieldContainer}>
+            <TextField
+              id="name"
+              type="text"
+              label="Full Name"
+              variant="filled"
+              sx={styles.textField}
+              value={inputs.name}
+              onChange={handleOnChange}
+              required
+            />
+          </Grid>
+          <Grid sx={styles.leftTextFieldContainer}>
+            <TextField
+              id="email"
+              type="email"
+              label="Email Address"
+              variant="filled"
+              sx={styles.textField}
+              value={inputs.email}
+              onChange={handleOnChange}
+              required
+            />
+          </Grid>
         </Grid>
-        <Grid sx={styles.leftTextFieldContainer}>
+        <Grid sx={styles.bottomTextFieldContainer}>
           <TextField
-            label="Email Address"
+            id="message"
+            type="text"
+            label="Your Message"
             variant="filled"
+            fullWidth
             sx={styles.textField}
+            value={inputs.message}
+            onChange={handleOnChange}
+            required
           />
         </Grid>
-      </Grid>
-      <Grid sx={styles.bottomTextFieldContainer}>
-        <TextField
-          label="Your Message"
-          variant="filled"
-          fullWidth
-          sx={styles.textField}
-        />
-      </Grid>
-      <Button disableRipple endIcon={<ArrowForwardIcon />} sx={styles.button}>
-        Send Message
-      </Button>
+        <Button
+          disableRipple
+          endIcon={<ArrowForwardIcon />}
+          sx={styles.button}
+          type="submit"
+          disabled={status.submitting}
+        >
+          {label}
+        </Button>
+      </form>
     </CardContainer>
   </Grid>
 );
 
 export { ContactForm };
-export default ContactForm;
+export default withContactForm(ContactForm);
