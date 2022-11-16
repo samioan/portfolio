@@ -5,7 +5,7 @@ const styles = {
     width: { lg: "50%", md: "calc(100% / 3)", xs: "100%" },
     height: { md: "100vh", xs: "50vh" },
     top: 0,
-    backgroundPosition: { lg: "unset", md: "center", xs: "unset" },
+    backgroundPosition: "center",
     "&:before": {
       content: "''",
       position: "absolute",
