@@ -13,6 +13,7 @@ import {
   personalSkills,
   professionalSkills,
 } from "reference-data";
+import { bg } from "images";
 
 import styles from "./styles";
 import { ExperienceCard, SkillsCard } from "./components";
@@ -49,7 +50,7 @@ const Resume = () => (
       </Grid>
     </LeftColumn>
 
-    <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
+    <RightColumn image={bg} />
   </PageContainer>
 );
 

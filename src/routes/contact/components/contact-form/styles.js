@@ -46,7 +46,7 @@ const styles = {
     lineHeight: "56px",
     fontsize: "14px",
     bgcolor: "transparent",
-    color: "white.main",
+    color: "light.main",
     p: 0,
     "&:hover": {
       bgcolor: "transparent",

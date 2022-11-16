@@ -12,10 +12,10 @@ const ContactCard = ({ icon, title, subtitle }) => (
       <Grid container alignItems="flex-start" wrap="nowrap">
         <img src={icon} alt={title} className={classes.icon} />
         <Grid sx={styles.textContainer}>
-          <Typography color="white.main" sx={styles.title}>
+          <Typography color="light.main" sx={styles.title}>
             {title}
           </Typography>
-          <Typography color="text.secondary" sx={styles.subtitle}>
+          <Typography color="textColor.main" sx={styles.subtitle}>
             {subtitle}
           </Typography>
         </Grid>

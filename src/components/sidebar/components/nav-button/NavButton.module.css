@@ -17,13 +17,13 @@
 }
 
 .iconLink:hover {
-    color:#fff;
+    color:#eee;
 }
 
 .activeIconLink {
     height:inherit;
     width:inherit;
-    color:#5ac24e;
+    color:#00ADB5;
     display: flex;
     align-items: center;
     justify-content: center;

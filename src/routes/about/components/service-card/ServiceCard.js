@@ -10,10 +10,10 @@ const ServiceCard = ({ icon, title, description }) => (
   <Grid sx={styles.cardContainer}>
     <CardContainer customStyles={styles.card}>
       <img src={icon} alt={title} className={classes.icon} />
-      <Typography color="white.main" sx={styles.title}>
+      <Typography color="light.main" sx={styles.title}>
         {title}
       </Typography>
-      <Typography color="text.secondary" sx={styles.text}>
+      <Typography color="textColor.main" sx={styles.text}>
         {description}
       </Typography>
     </CardContainer>

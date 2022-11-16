@@ -12,7 +12,7 @@ const ExperienceCard = ({ experienceItems }) => (
     {experienceItems.map((item) => (
       <div key={item.title}>
         <Grid sx={styles.card}>
-          <Typography color="white.main" sx={styles.title}>
+          <Typography color="light.main" sx={styles.title}>
             {item.title}
           </Typography>
           <Typography sx={styles.dateCompany}>

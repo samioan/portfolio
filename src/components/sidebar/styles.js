@@ -8,7 +8,7 @@ const styles = {
     justifyContent: "space-between",
     flexDirection: { md: "column", xs: "row" },
     height: { md: "100%", xs: 58 },
-    bgcolor: "#181818",
+    bgcolor: "darkTone1.main",
     "&:before": {
       content: "''",
       position: "absolute",

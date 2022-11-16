@@ -1,6 +1,6 @@
 const styles = {
   logoContainer: {
-    bgcolor: "text.primary",
+    bgcolor: "highlight.main",
     height: 58,
     width: { md: "100%", xs: 58 },
     "&:before": {

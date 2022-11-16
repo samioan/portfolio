@@ -8,6 +8,7 @@ import {
   Subtitle,
 } from "components";
 import { contact } from "reference-data";
+import { bg } from "images";
 
 import styles from "./styles";
 import { ContactCard, ContactForm } from "./components";
@@ -31,7 +32,7 @@ const Contact = () => (
       <ContactForm />
     </LeftColumn>
 
-    <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
+    <RightColumn image={bg} />
   </PageContainer>
 );
 

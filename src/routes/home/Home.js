@@ -18,13 +18,13 @@ const Home = () => (
       <Typography
         variant="h1"
         align="center"
-        color="white.main"
+        color="light.main"
         sx={styles.title}
       >
         <span className={classes.name}>Ioannis</span> Siampalias
       </Typography>
       <Grid container alignItems="center" justifyContent="center">
-        <Typography color="text.secondary" sx={styles.subtitle}>
+        <Typography color="textColor.main" sx={styles.subtitle}>
           I am a
         </Typography>
         <Typewriter

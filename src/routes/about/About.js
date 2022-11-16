@@ -10,6 +10,7 @@ import {
   PageContainer,
 } from "components";
 import { services } from "reference-data";
+import { bg } from "images";
 
 import styles from "./styles";
 import { CvButton, RoundButton, ServiceCard, BioText } from "./components";
@@ -57,7 +58,7 @@ const About = () => (
       </Grid>
     </LeftColumn>
 
-    <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
+    <RightColumn image={bg} />
   </PageContainer>
 );
 

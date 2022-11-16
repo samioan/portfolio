@@ -12,6 +12,8 @@ import kRetail from "./kRetail.jpg";
 import reactChess from "./reactChess.jpg";
 import reactPoker from "./reactPoker.jpg";
 import linkedinIcon from "./linkedinIcon.svg";
+import logoIcon from "./logoIcon.svg";
+import bg from "./bg.jpg";
 
 export {
   webIcon,
@@ -28,4 +30,6 @@ export {
   reactChess,
   reactPoker,
   linkedinIcon,
+  logoIcon,
+  bg,
 };

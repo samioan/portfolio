@@ -1,7 +1,7 @@
 const styles = {
   paper: {
     display: "flex",
-    backgroundColor: "#202020",
+    backgroundColor: "darkTone2.main",
     justifyContent: "center",
     height: "58px",
     gap: "16px",

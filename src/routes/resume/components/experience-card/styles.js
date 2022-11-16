@@ -22,7 +22,7 @@ const styles = {
   description: {
     fontSize: "15px",
     lineHeight: 1.7,
-    color: "#a9a9a9",
+    color: "textColor.main",
   },
   divider: {
     my: "30px",

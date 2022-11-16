@@ -11,7 +11,7 @@ const styles = {
     margin: "0 0 10px 0",
     fontSize: "14px",
     lineHeight: "14px",
-    color: "#fff",
+    color: "light.main",
     fontWeight: 700,
   },
   divider: {

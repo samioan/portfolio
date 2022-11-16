@@ -2,7 +2,6 @@ import { homeImg } from "images";
 
 const styles = {
   container: {
-    backgroundColor: "#242425",
     background: `url(${homeImg})`,
     backgroundSize: "cover",
     height: "100vh",

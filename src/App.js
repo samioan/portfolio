@@ -25,7 +25,11 @@ const App = () => (
           container
           justifyContent="center"
           alignItems="center"
-          sx={{ width: "100vw", height: "100vh", bgcolor: "#242425" }}
+          sx={{
+            width: "100vw",
+            height: "100vh",
+            bgcolor: "backgroundDark.main",
+          }}
         >
           <CircularProgress sx={{ width: "64px", height: "64px" }} />
         </Grid>

@@ -5,6 +5,7 @@ import {
   PageContainer,
   Subtitle,
 } from "components";
+import { bg } from "images";
 
 import styles from "./styles";
 
@@ -15,7 +16,7 @@ const Blog = () => (
       <Subtitle label="Coming soon!" customStyles={styles.subtitle} />
     </LeftColumn>
 
-    <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
+    <RightColumn image={bg} />
   </PageContainer>
 );
 

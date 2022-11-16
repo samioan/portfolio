@@ -3,7 +3,7 @@ const styles = {
     mt: "58px",
   },
   pageContainer: {
-    bgcolor: "#242425",
+    bgcolor: "backgroundDark.main",
     flexDirection: { md: "row", xs: "column-reverse" },
     alignItems: "flex-end",
     pl: { md: "44px", xs: 0 },

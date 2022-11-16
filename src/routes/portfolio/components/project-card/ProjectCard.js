@@ -24,7 +24,7 @@ const ProjectCard = ({ project }) => (
         </a>
       </div>
       <Grid sx={styles.textContainer}>
-        <Typography align="center" color="white.main" sx={styles.title}>
+        <Typography align="center" color="light.main" sx={styles.title}>
           {project.title}
         </Typography>
         <Typography align="center" sx={styles.subtitle}>

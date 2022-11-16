@@ -8,6 +8,7 @@ import {
   Subtitle,
 } from "components";
 import { projects } from "reference-data";
+import { bg } from "images";
 
 import { ProjectCard } from "./components";
 
@@ -34,7 +35,7 @@ const Portfolio = () => (
       </Grid>
     </LeftColumn>
 
-    <RightColumn image="https://www.bestmenswear.com/images/Suits/1Suit.jpg" />
+    <RightColumn image={bg} />
   </PageContainer>
 );
 

@@ -1,6 +1,6 @@
 const styles = {
   cardContainer: {
-    bgcolor: "rgba(255,255,255,.05)",
+    bgcolor: "backgroundLight.main",
     boxShadow: "0 0 50px rgb(0 0 0 / 20%)",
     borderRadius: "18px",
     transition: "all .3s ease 0s",
