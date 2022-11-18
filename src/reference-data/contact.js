@@ -1,7 +1,11 @@
 import { locationIcon, emailIcon, tickIcon, linkedinIcon } from "images";
 
 const contact = [
-  { icon: locationIcon, title: "Address", subtitle: "Athens, Greece" },
+  {
+    icon: locationIcon,
+    title: "Address",
+    subtitle: "Athens, Greece",
+  },
   {
     icon: emailIcon,
     title: "Email",
