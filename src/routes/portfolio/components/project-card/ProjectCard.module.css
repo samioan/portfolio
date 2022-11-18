@@ -1,0 +1,18 @@
+.imageContainer {
+    display: flex;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    position: relative;
+    overflow: hidden;
+}
+
+.image {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+}
+
+.link {
+    display: flex;
+}

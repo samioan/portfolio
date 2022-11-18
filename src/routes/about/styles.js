@@ -1,54 +1,21 @@
-import { createUseStyles } from "react-jss";
-import { fonts, colors } from "theme";
-
-const styles = createUseStyles({
-  aboutContainer: {
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
+const styles = {
+  bioContainer: {
+    pt: { sm: "116px", xs: "76px" },
     width: "100%",
-    maxWidth: 1280,
-    padding: "0 16px",
-    boxSizing: "border-box",
+    px: "28px",
   },
-  aboutTitle: {
-    ...fonts.pageTitle,
-    paddingTop: 100,
-    color: colors.darkHeaderText,
+  buttonsContainer: {
+    gap: "20px",
   },
-  divider: {
-    height: 4,
-    width: 100,
-    backgroundColor: colors.darkHeaderText,
-    margin: "12px 0 100px 0",
+  servicesSubtitle: {
+    mt: { sm: "102px", xs: "82px" },
+    pl: { sm: "28px", xs: 0 },
+    pb: "16px",
   },
-  goalsSectionContainer: {
-    display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 16,
-    marginBottom: 64,
-    flexWrap: "wrap",
-    justifyContent: "center",
-    width: "100%",
+  bottomContainer: {
+    pb: "30px",
   },
-  profileSectionContainer: {
-    display: "flex",
-    flexWrap: "wrap",
-    width: "90%",
-    justifyContent: "center",
-    paddingBottom: 100,
-  },
-  skillsContainer: {
-    maxWidth: "50%",
-    minWidth: 248,
-    width: "100%",
-    display: "flex",
-    flexDirection: "column",
-    gap: 16,
-    marginBottom: 32,
-  },
-});
+};
 
 export { styles };
 export default styles;

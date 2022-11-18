@@ -1,21 +1,14 @@
-import { createUseStyles } from "react-jss";
-import { fonts } from "theme";
-
-const styles = createUseStyles({
-  contactsContainer: {
-    display: "flex",
-    maxWidth: 1280,
-    flexDirection: "column",
-    alignItems: "center",
-    width: "100%",
-    padding: "0 16px",
-    boxSizing: "border-box",
+const styles = {
+  detailsSubtitle: {
+    mt: { sm: "138px", xs: "83px" },
+    ml: { sm: "28px", xs: 0 },
+    mb: "16px",
   },
-  contactsTitle: {
-    ...fonts.pageTitle,
-    margin: "32px 0px 64px 0px",
+  formSubtitle: {
+    mt: { sm: "86px", xs: "66px" },
+    ml: { sm: "28px", xs: 0 },
+    mb: "16px",
   },
-});
+};
 
-export { styles };
 export default styles;
