@@ -9,6 +9,8 @@ import ThemeProvider from "@mui/material/styles/ThemeProvider";
 import theme from "theme";
 import { Sidebar } from "components";
 
+import styles from "./styles";
+
 const Home = React.lazy(() => import("routes/home"));
 const About = React.lazy(() => import("routes/about"));
 const Resume = React.lazy(() => import("routes/resume"));
@@ -25,13 +27,9 @@ const App = () => (
           container
           justifyContent="center"
           alignItems="center"
-          sx={{
-            width: "100vw",
-            height: "100vh",
-            bgcolor: "backgroundDark.main",
-          }}
+          sx={styles.fallbackContainer}
         >
-          <CircularProgress sx={{ width: "64px", height: "64px" }} />
+          <CircularProgress sx={styles.loading} />
         </Grid>
       }
     >
