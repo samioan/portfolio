@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 import {
   Title,
   RightColumn,
@@ -9,16 +11,22 @@ import { bg } from "images";
 
 import styles from "./styles";
 
-const Blog = () => (
-  <PageContainer>
-    <LeftColumn>
-      <Title label="BLOG" />
-      <Subtitle label="Coming soon!" customStyles={styles.subtitle} />
-    </LeftColumn>
+const Blog = () => {
+  useEffect(() => {
+    document.title = "Blog";
+  }, []);
 
-    <RightColumn image={bg} />
-  </PageContainer>
-);
+  return (
+    <PageContainer>
+      <LeftColumn>
+        <Title label="BLOG" />
+        <Subtitle label="Coming soon!" customStyles={styles.subtitle} />
+      </LeftColumn>
+
+      <RightColumn image={bg} />
+    </PageContainer>
+  );
+};
 
 export { Blog };
 export default Blog;
