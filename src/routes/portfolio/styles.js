@@ -4,7 +4,7 @@ const styles = {
     mt: { sm: "138px", xs: "83px" },
     mb: "28px",
   },
-  column: {
+  projectContainer: {
     width: { sm: "50%", xs: "100%" },
   },
   container: {

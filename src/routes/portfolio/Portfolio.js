@@ -27,19 +27,12 @@ const Portfolio = () => {
         <Title label="PORTFOLIO" />
         <Subtitle label="My Projects" customStyles={styles.subtitle} />
         <Grid container sx={styles.container}>
-          <Grid container direction="column" wrap="nowrap" sx={styles.column}>
-            {projects
-              .slice(0, Math.floor(projects.length / 2))
-              .map((project) => (
-                <ProjectCard key={project.title} project={project} />
-              ))}
-          </Grid>
-          <Grid container direction="column" wrap="nowrap" sx={styles.column}>
-            {projects
-              .slice(Math.floor(projects.length / 2), projects.length)
-              .map((project) => (
-                <ProjectCard key={project.title} project={project} />
-              ))}
+          <Grid container justifyContent="center">
+            {projects.map((project) => (
+              <Grid key={project.title} sx={styles.projectContainer}>
+                <ProjectCard project={project} />
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </LeftColumn>

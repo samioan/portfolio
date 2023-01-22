@@ -7,10 +7,6 @@ import emailIcon from "./emailIcon.svg";
 import phoneIcon from "./phoneIcon.svg";
 import tickIcon from "./tickIcon.svg";
 import homeImg from "./homeImg.jpg";
-import clarity from "./clarity.jpg";
-import kRetail from "./kRetail.jpg";
-import reactChess from "./reactChess.jpg";
-import reactPoker from "./reactPoker.jpg";
 import linkedinIcon from "./linkedinIcon.svg";
 import logoIcon from "./logoIcon.svg";
 import bg from "./bg.jpg";
@@ -25,10 +21,6 @@ export {
   phoneIcon,
   tickIcon,
   homeImg,
-  clarity,
-  kRetail,
-  reactChess,
-  reactPoker,
   linkedinIcon,
   logoIcon,
   bg,
