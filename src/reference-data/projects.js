@@ -1,10 +1,22 @@
-import { clarity, kRetail, reactChess, reactPoker } from "images";
+import {
+  clarity,
+  kRetail,
+  reactChess,
+  reactPoker,
+  rockPaperScissors,
+} from "images/projects";
 
 const projects = [
   {
     image: kRetail,
     title: "K-Retail",
     subtitle: "E-Commerce",
+  },
+  {
+    image: rockPaperScissors,
+    title: "Rock Paper Scissors",
+    subtitle: "Game",
+    link: "https://github.com/samioan/rock-paper-scissors",
   },
   {
     image: reactChess,
