@@ -5,11 +5,11 @@ import classes from "./BioText.module.css";
 
 const BioText = () => (
   <Typography align="center" color="textColor.main" sx={styles.text}>
-    <span className={classes.emphasis}>Hello, I’m John</span>, a front-end
+    <span className={classes.emphasis}>Hello, I’m John</span>, a senior frontend
     developer based in Athens. I'm experienced in web engineering and game
     development. Also I have good knowledge in{" "}
     <span className={classes.emphasis}>
-      React, Redux, RxJS and Material UI.
+      React, Vue, Redux, Pinia, Tailwind, Material UI and TypeScript.
     </span>
   </Typography>
 );

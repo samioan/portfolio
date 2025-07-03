@@ -4,7 +4,6 @@ import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-// import AutoStoriesOutlinedIcon from "@mui/icons-material/AutoStoriesOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 
 const icon = {
@@ -34,11 +33,6 @@ const sidebarLinks = {
       component: <VisibilityOutlinedIcon sx={icon} />,
       href: "/portfolio",
     },
-    // {
-    //   title: "Blog",
-    //   component: <AutoStoriesOutlinedIcon sx={icon} />,
-    //   href: "/blog",
-    // },
     {
       title: "Contact",
       component: <EmailOutlinedIcon sx={icon} />,
