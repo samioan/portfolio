@@ -1,24 +1,23 @@
 .name {
-    opacity: 0.5;
-    padding-right: 15px
+  opacity: 0.5;
 }
 .typewriterText {
-    color:#eee;
-    font-weight:700;
-    font-size:20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  color: #eee;
+  font-weight: 700;
+  font-size: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .typewriterCursor {
-    color:#a9a9a9;
-    font-size:20px;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+  color: #a9a9a9;
+  font-size: 20px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 @media only screen and (max-width: 560px) {
-    .typewriterText {
-        font-size: 18px;
-    }
-    .typewriterCursor {
-        font-size: 18px;
-    }
+  .typewriterText {
+    font-size: 18px;
   }
+  .typewriterCursor {
+    font-size: 18px;
+  }
+}

@@ -4,15 +4,8 @@ import Grid from "@mui/material/Grid";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
-import {
-  Title,
-  RightColumn,
-  LeftColumn,
-  Subtitle,
-  PageContainer,
-} from "components";
+import { Title, InnerContainer, Subtitle, PageContainer } from "components";
 import { services } from "reference-data";
-import { bg } from "images";
 
 import styles from "./styles";
 import { CvButton, RoundButton, ServiceCard, BioText } from "./components";
@@ -24,7 +17,7 @@ const About = () => {
 
   return (
     <PageContainer>
-      <LeftColumn>
+      <InnerContainer>
         <Title label="ABOUT ME" />
         <Grid sx={styles.bioContainer}>
           <BioText />
@@ -63,9 +56,7 @@ const About = () => {
             />
           ))}
         </Grid>
-      </LeftColumn>
-
-      <RightColumn image={bg} />
+      </InnerContainer>
     </PageContainer>
   );
 };

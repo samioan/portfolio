@@ -1,8 +1,8 @@
 const personalSkills = [
-  { title: "Communication", percentage: 90 },
-  { title: "Team Work", percentage: 70 },
-  { title: "Leadership", percentage: 60 },
-  { title: "Support", percentage: 80 },
+  { title: "Communication" },
+  { title: "Team Work" },
+  { title: "Leadership" },
+  { title: "Support" },
 ];
 
 export default personalSkills;

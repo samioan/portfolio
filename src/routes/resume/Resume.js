@@ -2,20 +2,13 @@ import { useEffect } from "react";
 
 import Grid from "@mui/material/Grid";
 
-import {
-  Title,
-  RightColumn,
-  LeftColumn,
-  PageContainer,
-  Subtitle,
-} from "components";
+import { Title, InnerContainer, PageContainer, Subtitle } from "components";
 import {
   experience,
   education,
   personalSkills,
   professionalSkills,
 } from "reference-data";
-import { bg } from "images";
 
 import styles from "./styles";
 import { ExperienceCard, SkillsCard } from "./components";
@@ -27,7 +20,7 @@ const Resume = () => {
 
   return (
     <PageContainer>
-      <LeftColumn>
+      <InnerContainer>
         <Title label="RESUME" />
         <Grid container sx={styles.pageContainer}>
           <Grid item sx={styles.topCardContainer}>
@@ -55,9 +48,7 @@ const Resume = () => {
             <SkillsCard skillItems={professionalSkills} />
           </Grid>
         </Grid>
-      </LeftColumn>
-
-      <RightColumn image={bg} />
+      </InnerContainer>
     </PageContainer>
   );
 };
