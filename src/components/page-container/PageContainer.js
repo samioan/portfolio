@@ -2,8 +2,6 @@ import Grid from "@mui/material/Grid";
 import { useTheme } from "@mui/material/styles";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-import { Scrollbars } from "components";
-
 import styles from "./styles";
 
 const PageContainer = ({ children }) => {
@@ -14,11 +12,9 @@ const PageContainer = ({ children }) => {
     <Grid>
       {isXl ? (
         <Grid sx={styles.topContainer}>
-          <Scrollbars>
-            <Grid container sx={styles.pageContainer}>
-              {children}
-            </Grid>
-          </Scrollbars>
+          <Grid container sx={styles.pageContainer}>
+            {children}
+          </Grid>
         </Grid>
       ) : (
         <Grid container sx={styles.pageContainer}>

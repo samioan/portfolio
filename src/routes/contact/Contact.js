@@ -2,15 +2,8 @@ import { useEffect } from "react";
 
 import Grid from "@mui/material/Grid";
 
-import {
-  Title,
-  RightColumn,
-  LeftColumn,
-  PageContainer,
-  Subtitle,
-} from "components";
+import { Title, InnerContainer, PageContainer, Subtitle } from "components";
 import { contact } from "reference-data";
-import { bg } from "images";
 
 import styles from "./styles";
 import { ContactCard, ContactForm } from "./components";
@@ -22,7 +15,7 @@ const Contact = () => {
 
   return (
     <PageContainer>
-      <LeftColumn>
+      <InnerContainer>
         <Title label="CONTACT" />
         <Subtitle
           label="Contact Details"
@@ -40,9 +33,7 @@ const Contact = () => {
         </Grid>
         <Subtitle label="Contact Form" customStyles={styles.formSubtitle} />
         <ContactForm />
-      </LeftColumn>
-
-      <RightColumn image={bg} />
+      </InnerContainer>
     </PageContainer>
   );
 };

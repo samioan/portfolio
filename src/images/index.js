@@ -9,7 +9,6 @@ import tickIcon from "./tickIcon.svg";
 import homeImg from "./homeImg.jpg";
 import linkedinIcon from "./linkedinIcon.svg";
 import logoIcon from "./logoIcon.svg";
-import bg from "./bg.jpg";
 
 export {
   webIcon,
@@ -23,5 +22,4 @@ export {
   homeImg,
   linkedinIcon,
   logoIcon,
-  bg,
 };

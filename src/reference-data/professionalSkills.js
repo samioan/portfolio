@@ -1,8 +1,8 @@
 const professionalSkills = [
-  { title: "HTML / CSS / JS", percentage: 90 },
-  { title: "React", percentage: 80 },
-  { title: "Redux", percentage: 70 },
-  { title: "RxJS", percentage: 60 },
+  { title: "HTML / CSS / JS" },
+  { title: "React" },
+  { title: "Vue" },
+  { title: "TypeScript" },
 ];
 
 export default professionalSkills;

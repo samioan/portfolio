@@ -2,15 +2,8 @@ import { useEffect } from "react";
 
 import Grid from "@mui/material/Grid";
 
-import {
-  Title,
-  RightColumn,
-  LeftColumn,
-  PageContainer,
-  Subtitle,
-} from "components";
+import { Title, InnerContainer, PageContainer, Subtitle } from "components";
 import { projects } from "reference-data";
-import { bg } from "images";
 
 import { ProjectCard } from "./components";
 
@@ -23,7 +16,7 @@ const Portfolio = () => {
 
   return (
     <PageContainer>
-      <LeftColumn>
+      <InnerContainer>
         <Title label="PORTFOLIO" />
         <Subtitle label="My Projects" customStyles={styles.subtitle} />
         <Grid container sx={styles.container}>
@@ -35,9 +28,7 @@ const Portfolio = () => {
             ))}
           </Grid>
         </Grid>
-      </LeftColumn>
-
-      <RightColumn image={bg} />
+      </InnerContainer>
     </PageContainer>
   );
 };

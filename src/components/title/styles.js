@@ -3,7 +3,7 @@ const styles = {
     position: "absolute",
     overflow: "hidden",
     left: 0,
-    top: { md: "50px", sm: "40px", xs: "13px" },
+    top: { md: "50px", sm: "40px", xs: "30px" },
     width: "100%",
     fontSize: { sm: "120px", xs: "60px" },
     lineHeight: { md: "120px", xs: "140px" },
@@ -12,6 +12,7 @@ const styles = {
     whiteSpace: "nowrap",
     textTransform: "uppercase",
     opacity: 0.05,
+    pl: { md: "44px", xs: 0 },
   },
 };
 
