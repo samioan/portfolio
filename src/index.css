@@ -2,4 +2,16 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @apply font-poppins;
 }
+
+@font-face {
+  font-family: "Poppins";
+  src: url("theme/fonts/Poppins.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -1,13 +1,9 @@
 import { useEffect } from "react";
 
-import Grid from "@mui/material/Grid";
-
 import { Title, InnerContainer, PageContainer, Subtitle } from "components";
 import { projects } from "reference-data";
 
 import { ProjectCard } from "./components";
-
-import styles from "./styles";
 
 const Portfolio = () => {
   useEffect(() => {
@@ -18,16 +14,19 @@ const Portfolio = () => {
     <PageContainer>
       <InnerContainer>
         <Title label="PORTFOLIO" />
-        <Subtitle label="My Projects" customStyles={styles.subtitle} />
-        <Grid container sx={styles.container}>
-          <Grid container justifyContent="center">
+        <Subtitle
+          label="My Projects"
+          customClasses="sm:mt-[138px] mt-[83px] sm:ml-[28px] ml-0 mb-[28px]"
+        />
+        <div className="pb-[30px]">
+          <div className="flex justify-center flex-wrap">
             {projects.map((project) => (
-              <Grid key={project.title} sx={styles.projectContainer}>
+              <div key={project.title} className="sm:w-[50%] w-full">
                 <ProjectCard project={project} />
-              </Grid>
+              </div>
             ))}
-          </Grid>
-        </Grid>
+          </div>
+        </div>
       </InnerContainer>
     </PageContainer>
   );

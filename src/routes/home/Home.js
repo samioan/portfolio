@@ -1,12 +1,8 @@
 import { useEffect } from "react";
 
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
+import { homeImg } from "images";
 
 import Typewriter from "typewriter-effect";
-
-import styles from "./styles";
-import classes from "./Home.module.css";
 
 const Home = () => {
   useEffect(() => {
@@ -14,26 +10,34 @@ const Home = () => {
   }, []);
 
   return (
-    <Grid
-      container
-      direction="column"
-      alignItems="center"
-      justifyContent="center"
-      sx={styles.container}
+    <div
+      className="
+        flex 
+        flex-col 
+        items-center 
+        justify-center 
+        h-screen 
+        before:content-[''] 
+        before:fixed 
+        before:left-0 
+        before:right-0 
+        before:top-0 
+        before:bottom-0 
+        before:w-auto 
+        before:h-auto 
+        before:overflow-hidden 
+        before:opacity-[0.6]
+        before:bg-[#000]"
+      style={{ background: `url(${homeImg})`, backgroundSize: "cover" }}
     >
-      <Grid sx={styles.innerContainer}>
-        <Typography
-          variant="h1"
-          align="center"
-          color="light.main"
-          sx={styles.title}
-        >
-          <span className={classes.name}>Ioannis</span> Siampalias
-        </Typography>
-        <Grid container alignItems="center" justifyContent="center">
-          <Typography color="textColor.main" sx={styles.subtitle}>
+      <div className="z-[1]">
+        <h1 className="text-center text-[#EEEEEE] font-[600] text-shadow-lg tracking-[-.035em] mb-[8px] sm:text-[66px] text-[46px] leading-[1.167]">
+          <span className="opacity-50">Ioannis</span> Siampalias
+        </h1>
+        <div className="flex items-center justify-center">
+          <p className="text-[#a9a9a9] sm:text-[20px] text-[18px] mr-[8px] text-shadow-lg">
             I am a
-          </Typography>
+          </p>
           <Typewriter
             options={{
               strings: [
@@ -44,13 +48,15 @@ const Home = () => {
               ],
               autoStart: true,
               loop: true,
-              wrapperClassName: classes.typewriterText,
-              cursorClassName: classes.typewriterCursor,
+              wrapperClassName:
+                "text-[#eee] font-bold text-[20px] text-shadow-lg max-[560px]:text-[18px]",
+              cursorClassName:
+                "text-[#a9a9a9] text-[20px] text-shadow-lg max-[560px]:text-[18px]",
             }}
           />
-        </Grid>
-      </Grid>
-    </Grid>
+        </div>
+      </div>
+    </div>
   );
 };
 
