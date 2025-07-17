@@ -1,53 +1,75 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
-import DescriptionOutlinedIcon from "@mui/icons-material/DescriptionOutlined";
-import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
-
-const icon = {
+const iconProps = {
   width: 21,
   height: 21,
+  fill: "currentColor",
+  xmlns: "http://www.w3.org/2000/svg",
 };
 
 const sidebarLinks = {
   top: [
     {
       title: "Home",
-      component: <HomeOutlinedIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="m12 5.69 5 4.5V18h-2v-6H9v6H7v-7.81l5-4.5M12 3 2 12h3v8h6v-6h2v6h6v-8h3L12 3z" />
+        </svg>
+      ),
       href: "/",
     },
     {
       title: "About",
-      component: <PersonOutlineOutlinedIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M12 5.9c1.16 0 2.1.94 2.1 2.1s-.94 2.1-2.1 2.1S9.9 9.16 9.9 8s.94-2.1 2.1-2.1m0 9c2.97 0 6.1 1.46 6.1 2.1v1.1H5.9V17c0-.64 3.13-2.1 6.1-2.1M12 4C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z" />
+        </svg>
+      ),
       href: "/about",
     },
     {
       title: "Resume",
-      component: <DescriptionOutlinedIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M8 16h8v2H8zm0-4h8v2H8zm6-10H6c-1.1 0-2 .9-2 2v16c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11z" />
+        </svg>
+      ),
       href: "/resume",
     },
     {
       title: "Portfolio",
-      component: <VisibilityOutlinedIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M12 6c3.79 0 7.17 2.13 8.82 5.5C19.17 14.87 15.79 17 12 17s-7.17-2.13-8.82-5.5C4.83 8.13 8.21 6 12 6m0-2C7 4 2.73 7.11 1 11.5 2.73 15.89 7 19 12 19s9.27-3.11 11-7.5C21.27 7.11 17 4 12 4zm0 5c1.38 0 2.5 1.12 2.5 2.5S13.38 14 12 14s-2.5-1.12-2.5-2.5S10.62 9 12 9m0-2c-2.48 0-4.5 2.02-4.5 4.5S9.52 16 12 16s4.5-2.02 4.5-4.5S14.48 7 12 7z" />
+        </svg>
+      ),
       href: "/portfolio",
     },
     {
       title: "Contact",
-      component: <EmailOutlinedIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+        </svg>
+      ),
       href: "/contact",
     },
   ],
   bottom: [
     {
       title: "Github",
-      component: <GitHubIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M12 1.27a11 11 0 00-3.48 21.46c.55.09.73-.28.73-.55v-1.84c-3.03.64-3.67-1.46-3.67-1.46-.55-1.29-1.28-1.65-1.28-1.65-.92-.65.1-.65.1-.65 1.1 0 1.73 1.1 1.73 1.1.92 1.65 2.57 1.2 3.21.92a2 2 0 01.64-1.47c-2.47-.27-5.04-1.19-5.04-5.5 0-1.1.46-2.1 1.2-2.84a3.76 3.76 0 010-2.93s.91-.28 3.11 1.1c1.8-.49 3.7-.49 5.5 0 2.1-1.38 3.02-1.1 3.02-1.1a3.76 3.76 0 010 2.93c.83.74 1.2 1.74 1.2 2.94 0 4.21-2.57 5.13-5.04 5.4.45.37.82.92.82 2.02v3.03c0 .27.1.64.73.55A11 11 0 0012 1.27" />
+        </svg>
+      ),
       href: "https://github.com/samioan",
     },
     {
       title: "Linkedin",
-      component: <LinkedInIcon sx={icon} />,
+      component: (
+        <svg {...iconProps} viewBox="0 0 24 24">
+          <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+        </svg>
+      ),
       href: "https://www.linkedin.com/in/ioannis-siampalias/",
     },
   ],

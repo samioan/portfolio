@@ -1,11 +1,8 @@
 import { useEffect } from "react";
 
-import Grid from "@mui/material/Grid";
-
 import { Title, InnerContainer, PageContainer, Subtitle } from "components";
 import { contact } from "reference-data";
 
-import styles from "./styles";
 import { ContactCard, ContactForm } from "./components";
 
 const Contact = () => {
@@ -19,9 +16,9 @@ const Contact = () => {
         <Title label="CONTACT" />
         <Subtitle
           label="Contact Details"
-          customStyles={styles.detailsSubtitle}
+          customClasses="sm:mt-[138px] mt-[83px] sm:ml-[28px] ml-0 mb-[16px]"
         />
-        <Grid container justifyContent="space-between" wrap="wrap">
+        <div className="flex justify-space-between flex-wrap">
           {contact.map(({ icon, title, subtitle }) => (
             <ContactCard
               key={title}
@@ -30,8 +27,11 @@ const Contact = () => {
               subtitle={subtitle}
             />
           ))}
-        </Grid>
-        <Subtitle label="Contact Form" customStyles={styles.formSubtitle} />
+        </div>
+        <Subtitle
+          label="Contact Form"
+          customClasses="sm:mt-[86px] mt-[66px] sm:ml-[28px] ml-0 mb-[16px]"
+        />
         <ContactForm />
       </InnerContainer>
     </PageContainer>

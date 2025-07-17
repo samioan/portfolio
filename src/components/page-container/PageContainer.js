@@ -1,29 +1,12 @@
-import Grid from "@mui/material/Grid";
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-
-import styles from "./styles";
-
-const PageContainer = ({ children }) => {
-  const theme = useTheme();
-  const isXl = useMediaQuery(theme.breakpoints.down("md"));
-
-  return (
-    <Grid>
-      {isXl ? (
-        <Grid sx={styles.topContainer}>
-          <Grid container sx={styles.pageContainer}>
-            {children}
-          </Grid>
-        </Grid>
-      ) : (
-        <Grid container sx={styles.pageContainer}>
-          {children}
-        </Grid>
-      )}
-    </Grid>
-  );
-};
+const PageContainer = ({ children }) => (
+  <div>
+    <div className="md:mt-0 mt-[58px]">
+      <div className="flex min-h-screen bg-[#222831] md:flex-row xs:flex-col-reverse items-end md:pl-[44px] xs:pl-0">
+        {children}
+      </div>
+    </div>
+  </div>
+);
 
 export { PageContainer };
 export default PageContainer;

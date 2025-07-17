@@ -1,27 +1,21 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-
 import { CardContainer } from "components";
 
-import classes from "./ContactCard.module.css";
-import styles from "./styles";
-
 const ContactCard = ({ icon, title, subtitle }) => (
-  <Grid sx={styles.cardContainer}>
-    <CardContainer customStyles={styles.card}>
-      <Grid container alignItems="flex-start" wrap="nowrap">
-        <img src={icon} alt={title} className={classes.icon} />
-        <Grid sx={styles.textContainer}>
-          <Typography color="light.main" sx={styles.title}>
+  <div className="py-[16px] px-[28px] sm:w-[50%] w-full">
+    <CardContainer customClasses="p-[20px] h-[87px]">
+      <div className="flex items-start flex-nowrap">
+        <img src={icon} alt={title} className="w-[40px] h-[40px]" />
+        <div className="ml-[15px] overflow-hidden whitespace-nowrap">
+          <p className="text-[16px] font-bold leading-[20px] text-[#EEEEEE]">
             {title}
-          </Typography>
-          <Typography color="textColor.main" sx={styles.subtitle}>
+          </p>
+          <p className="text-[#a9a9a9] text-[15px] leading-[1.7] text-ellipsis overflow-hidden whitespace-nowrap">
             {subtitle}
-          </Typography>
-        </Grid>
-      </Grid>
+          </p>
+        </div>
+      </div>
     </CardContainer>
-  </Grid>
+  </div>
 );
 
 export { ContactCard };

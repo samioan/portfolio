@@ -1,9 +1,7 @@
-import Grid from "@mui/material/Grid";
-
-import styles from "./styles";
-
 const InnerContainer = ({ children }) => (
-  <Grid sx={styles.innerContainer}>{children}</Grid>
+  <div className="bg-[#222831] xl:max-w-[75%] max-w-full mx-auto min-h-screen">
+    {children}
+  </div>
 );
 
 export { InnerContainer };

@@ -1,6 +1,3 @@
-import Grid from "@mui/material/Grid";
-
-import styles from "./styles";
 import withSidebar from "./withSidebar";
 import { Logo, NavButton, NavPopover, NavMenu } from "./components";
 
@@ -13,8 +10,35 @@ const Sidebar = ({
   handleClick,
 }) => {
   return (
-    <Grid container sx={styles.container}>
-      <Grid container alignItems="center" sx={styles.innerContainer}>
+    <div
+      className="
+        flex 
+        fixed 
+        left-0 
+        md:pb-[16px]
+        pb-0
+        justify-between 
+        md:bottom-0 
+        bottom-[calc(100%-58px)] 
+        md:w-[44px] 
+        w-full 
+        md:flex-col
+        flex-row 
+        md:h-full 
+        h-[58px]
+        bg-[#181818]
+        before:content-['']
+        before:absolute
+        before:-right-[1px]
+        before:top-0
+        before:md:w-[1px]
+        before:w-0
+        before:md:h-full
+        before:h-0
+        before:bg-[white]
+        before:opacity-[0.05]"
+    >
+      <div className="flex items-center gap-[16px] md:w-full w-auto flex-wrap justify-center">
         <Logo />
         {!isXl &&
           topSidebarButtons.map(({ title, component, href }) => (
@@ -26,8 +50,8 @@ const Sidebar = ({
               href={href}
             />
           ))}
-      </Grid>
-      <Grid container alignItems="center" sx={styles.innerBottomContainer}>
+      </div>
+      <div className="flex flex-wrap items-center gap-[16px] md:w-full w-auto">
         {bottomSidebarButtons.map(({ title, component, href }) => (
           <NavButton
             key={title}
@@ -37,7 +61,7 @@ const Sidebar = ({
           />
         ))}
         {isXl && <NavMenu isMenuOpen={open} handleClick={handleClick} />}
-      </Grid>
+      </div>
       <NavPopover open={open} anchorEl={anchorEl} onClose={handleClick}>
         {topSidebarButtons.map(({ title, component, href }) => (
           <NavButton
@@ -49,7 +73,7 @@ const Sidebar = ({
           />
         ))}
       </NavPopover>
-    </Grid>
+    </div>
   );
 };
 
