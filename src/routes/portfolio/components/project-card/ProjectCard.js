@@ -1,37 +1,37 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-
 import { CardContainer } from "components";
 
-import styles from "./styles";
-import classes from "./ProjectCard.module.css";
-
 const ProjectCard = ({ project }) => (
-  <CardContainer customStyles={styles.cardContainer}>
-    <Grid>
-      <div className={classes.imageContainer}>
+  <CardContainer customClasses="my-[16px] mx-[28px]">
+    <div>
+      <div className="flex relative overflow-hidden rounded-t-[18px]">
         <a
           href={project?.link}
           target="_blank"
           rel="noreferrer"
-          className={classes.link}
+          className="flex"
         >
           <img
             src={project.image}
             alt={project.title}
-            className={classes.image}
+            className="object-cover overflow-hidden w-full h-auto"
           />
         </a>
       </div>
-      <Grid sx={styles.textContainer}>
-        <Typography align="center" color="light.main" sx={styles.title}>
+      <div className="p-[15px] h-[80px]">
+        <p
+          className="text-center text-[16px] font-bold mb-[8px] text-[#EEEEEE]"
+          s
+        >
           {project.title}
-        </Typography>
-        <Typography align="center" sx={styles.subtitle}>
+        </p>
+        <p
+          className="text-center text-[12px] leading-[12px] text-[#777]"
+          align="center"
+        >
           {project.subtitle}
-        </Typography>
-      </Grid>
-    </Grid>
+        </p>
+      </div>
+    </div>
   </CardContainer>
 );
 

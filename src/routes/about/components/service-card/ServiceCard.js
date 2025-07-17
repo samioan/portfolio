@@ -1,23 +1,15 @@
-import Grid from "@mui/material/Grid";
-import Typography from "@mui/material/Typography";
-
 import { CardContainer } from "components";
 
-import styles from "./styles";
-import classes from "./ServiceCard.module.css";
-
 const ServiceCard = ({ icon, title, description }) => (
-  <Grid sx={styles.cardContainer}>
-    <CardContainer customStyles={styles.card}>
-      <img src={icon} alt={title} className={classes.icon} />
-      <Typography color="light.main" sx={styles.title}>
+  <div className="py-[16px] px-[28px] sm:w-[50%] w-full">
+    <CardContainer customClasses="p-[30px] min-h-[236px]">
+      <img src={icon} alt={title} className="w-[50px]" />
+      <p className="mt-[16px] mb-[10px] text-[16px] font-bold text-[#EEEEEE]">
         {title}
-      </Typography>
-      <Typography color="textColor.main" sx={styles.text}>
-        {description}
-      </Typography>
+      </p>
+      <p className="text-[15px] leading-[1.7] text-[#a9a9a9]">{description}</p>
     </CardContainer>
-  </Grid>
+  </div>
 );
 
 export { ServiceCard };

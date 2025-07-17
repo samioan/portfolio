@@ -1,13 +1,24 @@
 import { useState, useEffect } from "react";
-
-import { useTheme } from "@mui/material/styles";
-import useMediaQuery from "@mui/material/useMediaQuery";
-
 import { sidebarLinks } from "reference-data";
 
+function useMediaQueryCustom(query) {
+  const [matches, setMatches] = useState(
+    () => window.matchMedia(query).matches
+  );
+
+  useEffect(() => {
+    const media = window.matchMedia(query);
+    const listener = () => setMatches(media.matches);
+    media.addEventListener("change", listener);
+
+    return () => media.removeEventListener("change", listener);
+  }, [query]);
+
+  return matches;
+}
+
 const withSidebar = (Component) => (props) => {
-  const theme = useTheme();
-  const isXl = useMediaQuery(theme.breakpoints.down("md"));
+  const isXl = useMediaQueryCustom("(max-width: 768px)");
 
   const [open, setOpen] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
@@ -23,7 +34,6 @@ const withSidebar = (Component) => (props) => {
   }, [isXl]);
 
   const topSidebarButtons = sidebarLinks.top;
-
   const bottomSidebarButtons = sidebarLinks.bottom;
 
   const newProps = {
