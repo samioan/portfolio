@@ -4,8 +4,10 @@ import education from "./education";
 import personalSkills from "./personalSkills";
 import professionalSkills from "./professionalSkills";
 import contact from "./contact";
-import projects from "./projects";
 import sidebarLinks from "./sidebarLinks";
+import professionalProjects from "./professionalProjects";
+import personalProjects from "./personalProjects";
+import pageData from "./pageData";
 
 export {
   services,
@@ -14,6 +16,8 @@ export {
   personalSkills,
   professionalSkills,
   contact,
-  projects,
   sidebarLinks,
+  professionalProjects,
+  personalProjects,
+  pageData,
 };
