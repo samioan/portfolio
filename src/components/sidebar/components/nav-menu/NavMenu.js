@@ -1,3 +1,6 @@
+import { ReactComponent as MenuIcon } from "images/menuIcon.svg";
+import { ReactComponent as CloseIcon } from "images/closeIcon.svg";
+
 const NavMenu = ({ isMenuOpen, handleClick }) => (
   <button
     type="button"
@@ -15,37 +18,7 @@ const NavMenu = ({ isMenuOpen, handleClick }) => (
       bg-[#202020]
     "
   >
-    {isMenuOpen ? (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={2}
-        stroke="currentColor"
-        className="w-[32px] h-[32px]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M6 18L18 6M6 6l12 12"
-        />
-      </svg>
-    ) : (
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        strokeWidth={2}
-        stroke="currentColor"
-        className="w-[32px] h-[32px]"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          d="M3.75 5.25h16.5M3.75 12h16.5m-16.5 6.75h16.5"
-        />
-      </svg>
-    )}
+    {isMenuOpen ? <MenuIcon /> : <CloseIcon />}
   </button>
 );
 

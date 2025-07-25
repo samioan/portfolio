@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { ReactComponent as DownloadIcon } from "images/downloadIcon.svg";
 
 const CvButton = () => (
   <Link
@@ -21,16 +22,10 @@ const CvButton = () => (
         transition-all duration-500
         hover:text-[#00ADB5]
         hover:shadow-[0_5px_35px_rgba(0,0,0,0.2)]
+        whitespace-nowrap
       "
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        className="w-5 h-5"
-      >
-        <path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z" />
-      </svg>
+      <DownloadIcon />
       Download CV
     </button>
   </Link>
