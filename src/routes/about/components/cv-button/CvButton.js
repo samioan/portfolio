@@ -22,6 +22,7 @@ const CvButton = () => (
         transition-all duration-500
         hover:text-[#00ADB5]
         hover:shadow-[0_5px_35px_rgba(0,0,0,0.2)]
+        whitespace-nowrap
       "
     >
       <DownloadIcon />
