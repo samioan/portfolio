@@ -9,6 +9,18 @@ import tickIcon from "./tickIcon.svg";
 import homeImg from "./homeImg.jpg";
 import linkedinIcon from "./linkedinIcon.svg";
 import logoIcon from "./logoIcon.svg";
+import githubIcon from "./githubIcon.svg";
+import linkedinFilledIcon from "./linkedinFilledIcon.svg";
+import globeIcon from "./globeIcon.svg";
+import menuIcon from "./menuIcon.svg";
+import closeIcon from "./closeIcon.svg";
+import homeIcon from "./homeIcon.svg";
+import aboutIcon from "./aboutIcon.svg";
+import resumeIcon from "./resumeIcon.svg";
+import portfolioIcon from "./portfolioIcon.svg";
+import contactIcon from "./contactIcon.svg";
+import downloadIcon from "./downloadIcon.svg";
+import arrowIcon from "./arrowIcon.svg";
 
 export {
   webIcon,
@@ -22,4 +34,16 @@ export {
   homeImg,
   linkedinIcon,
   logoIcon,
+  githubIcon,
+  linkedinFilledIcon,
+  globeIcon,
+  menuIcon,
+  closeIcon,
+  homeIcon,
+  aboutIcon,
+  resumeIcon,
+  portfolioIcon,
+  contactIcon,
+  downloadIcon,
+  arrowIcon,
 };

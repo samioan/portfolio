@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 import { Title, InnerContainer, PageContainer, Subtitle } from "components";
-import { projects } from "reference-data";
+import { personalProjects, professionalProjects } from "reference-data";
 
 import { ProjectCard } from "./components";
 
@@ -14,17 +14,20 @@ const Portfolio = () => {
     <PageContainer>
       <InnerContainer>
         <Title label="PORTFOLIO" />
-        <Subtitle
-          label="My Projects"
-          customClasses="sm:mt-[138px] mt-[83px] sm:ml-[28px] ml-0 mb-[28px]"
-        />
-        <div className="pb-[30px]">
-          <div className="flex justify-center flex-wrap">
-            {projects.map((project) => (
-              <div key={project.title} className="sm:w-[50%] w-full">
-                <ProjectCard project={project} />
-              </div>
-            ))}
+        <div className="flex flex-wrap sm:mt-[138px] mt-[83px] lg:w-[70%] w-full mx-auto">
+          <div className="w-full mb-[102px]">
+            <Subtitle
+              label="Professional Projects"
+              customClasses="sm:ml-[28px] ml-0 mb-[32px]"
+            />
+            <ProjectCard projects={professionalProjects} />
+          </div>
+          <div className="w-full mb-[102px]">
+            <Subtitle
+              label="Personal Projects"
+              customClasses="sm:ml-[28px] ml-0 mb-[32px]"
+            />
+            <ProjectCard projects={personalProjects} />
           </div>
         </div>
       </InnerContainer>
